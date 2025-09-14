@@ -885,18 +885,10 @@ with shared.gradio_root:
                 if not args_manager.args.disable_preset_selection:
                     refresh_files_output += [preset_selection]
                 refresh_files.click(refresh_files_clicked, [], refresh_files_output + lora_ctrls,
-                                    queue=False, show_progress=False)
-
-            # Add the Influencer tab
-            with gr.Tab(label='Influencers'):
-                influencer_prompt, influencer_negative_prompt, apply_to_main_btn = influencer_ui.create_influencer_tab()
+                    queue=False, show_progress=False)
                 
-                # Connect the apply button to main prompts
-                apply_to_main_btn.click(
-                    fn=lambda p, n: [p, n],
-                    inputs=[influencer_prompt, influencer_negative_prompt],
-                    outputs=[prompt, negative_prompt]
-                )
+        with gr.Tab(label='Influencers'):
+            influencer_prompt, influencer_negative_prompt = influencer_ui.create_influencer_tab()
 
         state_is_generating = gr.State(False)
 

@@ -347,20 +347,11 @@ def create_influencer_tab():
             
             return prompt, influencer_config
         
-        def apply_to_prompts(prompt, negative_prompt):
-            return prompt, negative_prompt
-        
         # Event handlers
         generate_btn.click(
             fn=generate_influencer,
             inputs=[influencer_type, max_realism, diverse_ethnicity, custom_age],
             outputs=[influencer_prompt, influencer_config_display]
-        )
-        
-        apply_to_main.click(
-            fn=apply_to_prompts,
-            inputs=[influencer_prompt, influencer_negative_prompt],
-            outputs=[gr.Textbox.update(), gr.Textbox.update()]  # This will be connected in webui.py
         )
         
         save_config.click(
@@ -370,4 +361,5 @@ def create_influencer_tab():
         )
     
     # Return the components that need to be connected externally
-    return influencer_prompt, influencer_negative_prompt, apply_to_main
+    # Note: We don't return apply_to_main button to avoid Gradio conflicts
+    return influencer_prompt, influencer_negative_prompt
