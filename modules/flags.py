@@ -136,8 +136,9 @@ class PerformanceLoRA(Enum):
     HYPER_SD = 'sdxl_hyper_sd_4step_lora.safetensors'
 
 
+# In modules/flags.py, update the Steps class:
 class Steps(IntEnum):
-    QUALITY = 120
+    QUALITY = 200        # Changed from 120
     SPEED = 30
     EXTREME_SPEED = 8
     LIGHTNING = 4
@@ -149,7 +150,7 @@ class Steps(IntEnum):
 
 
 class StepsUOV(IntEnum):
-    QUALITY = 72
+    QUALITY = 120        # Changed from 72
     SPEED = 18
     EXTREME_SPEED = 8
     LIGHTNING = 4
