@@ -17,6 +17,7 @@ import args_manager
 import copy
 import launch
 from extras.inpaint_mask import SAMOptions
+import modules.influencer_ui as influencer_ui
 
 from modules.sdxl_styles import legal_style_names
 from modules.private_logger import get_current_html_path
@@ -886,6 +887,17 @@ with shared.gradio_root:
                 refresh_files.click(refresh_files_clicked, [], refresh_files_output + lora_ctrls,
                                     queue=False, show_progress=False)
 
+            # Add the Influencer tab
+            with gr.Tab(label='Influencers'):
+                influencer_prompt, influencer_negative_prompt, apply_to_main_btn = influencer_ui.create_influencer_tab()
+                
+                # Connect the apply button to main prompts
+                apply_to_main_btn.click(
+                    fn=lambda p, n: [p, n],
+                    inputs=[influencer_prompt, influencer_negative_prompt],
+                    outputs=[prompt, negative_prompt]
+                )
+
         state_is_generating = gr.State(False)
 
         load_data_outputs = [advanced_checkbox, image_number, prompt, negative_prompt, style_selections,
@@ -895,7 +907,7 @@ with shared.gradio_root:
                              base_model, refiner_model, refiner_switch, sampler_name, scheduler_name, vae_name,
                              seed_random, image_seed, inpaint_engine, inpaint_engine_state,
                              inpaint_mode] + enhance_inpaint_mode_ctrls + [generate_button,
-                             load_parameter_button] + freeu_ctrls + lora_ctrls
+                             load_parameter_button] + freeu_ctrls + lora_ctrls + [influencer_prompt, influencer_negative_prompt]
 
         if not args_manager.args.disable_preset_selection:
             def preset_selection_change(preset, is_generating, inpaint_mode):

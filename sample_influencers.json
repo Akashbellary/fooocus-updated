@@ -1,0 +1,140 @@
+[
+  {
+    "id": "influencer_20250914_215005_000",
+    "type": "instagram_model",
+    "prompt": "portrait of a mid-age woman, oval face shape, radiant hair, professional smile, sophisticated attire, beauty photography, soft lighting, shot on Nikon Z8, modern architecture, RAW photo, professional retouching, film grain, flawless skin, cinematic",
+    "negative_prompt": "cartoon, anime, 3d render, computer graphics, painting, drawing, sketch, low quality, blurry, out of focus, low resolution, pixelated, compressed, watermark, text, logo, signature, distorted face, asymmetric face, disproportionate features, unrealistic proportions, plastic look, artificial appearance, doll-like, mannequin, mask, costume, fake, oversaturated, underexposed, overexposed, poor lighting, harsh shadows, grainy, noisy, smudged, deformed, mutated, extra limbs, missing features, cropped face, cut off features, bad anatomy, wrong anatomy, disconnected limbs, malformed hands, extra fingers, missing fingers, floating head, detached body parts, unrealistic eyes, empty eyes, expressionless face, frozen expression, unnatural pose, stiff pose, bad composition, cluttered scene, busy background, distracting elements, low detail, lack of detail, smooth skin without pores, artificial skin, plastic skin, glowing skin, shiny face, oily face, sweaty face, over-retouched, airbrushed effect, filter effect, snapchat filter, instagram filter, unrealistic beauty standards, impossible perfection",
+    "settings": {
+      "base_model": "realisticStockPhoto_v20.safetensors",
+      "refiner_model": "None",
+      "refiner_switch": 0.5,
+      "loras": [
+        [
+          "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
+          0.4
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ]
+      ],
+      "cfg_scale": 3.5,
+      "sharpness": 3.0,
+      "sampler": "dpmpp_2m_sde_gpu",
+      "scheduler": "karras",
+      "performance": "Quality",
+      "steps": 200,
+      "styles": [
+        "Fooocus Photograph",
+        "Fooocus Sharp",
+        "sai-photographic"
+      ],
+      "aspect_ratio": "896*1152",
+      "image_number": 1
+    }
+  },
+  {
+    "id": "influencer_20250914_215005_001",
+    "type": "instagram_model",
+    "prompt": "portrait of a young adult woman, sharp jawline, glossy hair, serious expression, stylish attire, commercial photography, perfect lighting, shot on Sony A7R V, modern architecture, RAW photo, ultra detailed, perfect lighting, pores visible, award winning",
+    "negative_prompt": "cartoon, anime, 3d render, computer graphics, painting, drawing, sketch, low quality, blurry, out of focus, low resolution, pixelated, compressed, watermark, text, logo, signature, distorted face, asymmetric face, disproportionate features, unrealistic proportions, plastic look, artificial appearance, doll-like, mannequin, mask, costume, fake, oversaturated, underexposed, overexposed, poor lighting, harsh shadows, grainy, noisy, smudged, deformed, mutated, extra limbs, missing features, cropped face, cut off features, bad anatomy, wrong anatomy, disconnected limbs, malformed hands, extra fingers, missing fingers, floating head, detached body parts, unrealistic eyes, empty eyes, expressionless face, frozen expression, unnatural pose, stiff pose, bad composition, cluttered scene, busy background, distracting elements, low detail, lack of detail, smooth skin without pores, artificial skin, plastic skin, glowing skin, shiny face, oily face, sweaty face, over-retouched, airbrushed effect, filter effect, snapchat filter, instagram filter, unrealistic beauty standards, impossible perfection",
+    "settings": {
+      "base_model": "realisticStockPhoto_v20.safetensors",
+      "refiner_model": "None",
+      "refiner_switch": 0.5,
+      "loras": [
+        [
+          "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
+          0.4
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ]
+      ],
+      "cfg_scale": 3.5,
+      "sharpness": 3.0,
+      "sampler": "dpmpp_2m_sde_gpu",
+      "scheduler": "karras",
+      "performance": "Quality",
+      "steps": 200,
+      "styles": [
+        "Fooocus Photograph",
+        "Fooocus Sharp",
+        "sai-photographic"
+      ],
+      "aspect_ratio": "896*1152",
+      "image_number": 1
+    }
+  },
+  {
+    "id": "influencer_20250914_215005_002",
+    "type": "instagram_model",
+    "prompt": "portrait of a mature woman, small nose, perfectly styled hair, bright smile, designer clothing, glamour photography, dramatic lighting, shot on Canon EOS R5, urban cityscape, RAW photo, flawless skin, editorial quality, uncanny valley",
+    "negative_prompt": "cartoon, anime, 3d render, computer graphics, painting, drawing, sketch, low quality, blurry, out of focus, low resolution, pixelated, compressed, watermark, text, logo, signature, distorted face, asymmetric face, disproportionate features, unrealistic proportions, plastic look, artificial appearance, doll-like, mannequin, mask, costume, fake, oversaturated, underexposed, overexposed, poor lighting, harsh shadows, grainy, noisy, smudged, deformed, mutated, extra limbs, missing features, cropped face, cut off features, bad anatomy, wrong anatomy, disconnected limbs, malformed hands, extra fingers, missing fingers, floating head, detached body parts, unrealistic eyes, empty eyes, expressionless face, frozen expression, unnatural pose, stiff pose, bad composition, cluttered scene, busy background, distracting elements, low detail, lack of detail, smooth skin without pores, artificial skin, plastic skin, glowing skin, shiny face, oily face, sweaty face, over-retouched, airbrushed effect, filter effect, snapchat filter, instagram filter, unrealistic beauty standards, impossible perfection",
+    "settings": {
+      "base_model": "realisticStockPhoto_v20.safetensors",
+      "refiner_model": "None",
+      "refiner_switch": 0.5,
+      "loras": [
+        [
+          "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
+          0.4
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ],
+        [
+          "None",
+          1.0
+        ]
+      ],
+      "cfg_scale": 3.5,
+      "sharpness": 3.0,
+      "sampler": "dpmpp_2m_sde_gpu",
+      "scheduler": "karras",
+      "performance": "Quality",
+      "steps": 200,
+      "styles": [
+        "Fooocus Photograph",
+        "Fooocus Sharp",
+        "sai-photographic"
+      ],
+      "aspect_ratio": "896*1152",
+      "image_number": 1
+    }
+  }
+]
