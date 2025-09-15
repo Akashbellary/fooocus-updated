@@ -362,4 +362,4 @@ def create_influencer_tab():
     
     # Return the components that need to be connected externally
     # Note: We don't return apply_to_main button to avoid Gradio conflicts
-    return influencer_prompt, influencer_negative_prompt
+    return influencer_prompt, influencer_negative_prompt, apply_to_main

@@ -888,7 +888,14 @@ with shared.gradio_root:
                     queue=False, show_progress=False)
                 
         with gr.Tab(label='Influencers'):
-            influencer_prompt, influencer_negative_prompt = influencer_ui.create_influencer_tab()
+            influencer_prompt, influencer_negative_prompt, apply_to_main_btn = influencer_ui.create_influencer_tab()
+            
+            # Connect the apply button to main prompts
+            apply_to_main_btn.click(
+                fn=lambda p, n: [p, n],
+                inputs=[influencer_prompt, influencer_negative_prompt],
+                outputs=[prompt, negative_prompt]
+            )
 
         state_is_generating = gr.State(False)
 
